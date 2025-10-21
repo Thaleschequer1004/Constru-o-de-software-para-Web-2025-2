@@ -1,0 +1,33 @@
+#titulo1{
+    text-align: center;
+    color: blue; 
+}
+
+#titulo2{
+    color: rgb(35, 141, 35);
+}
+
+.cap1{
+    text-align: end;
+    color: brown;
+}
+
+.cap2{
+    font-style: italic;
+    color: darkolivegreen;
+}
+
+.cap1:hover{
+    color: rgb(21, 255, 0);
+    font-style: normal;
+    cursor: pointer;  
+}
+
+.cap2:hover{
+    color: rgb(0, 195, 255);
+    font-style: normal;
+    cursor: pointer;
+}
+
+
+
