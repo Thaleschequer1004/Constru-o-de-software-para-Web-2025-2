@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17</title>
+</head>
+<body>
+    <h1>Calculadora de idade</h1>
+    <label for="Dia do nascimento">Dia do seu nascimento:</label>
+    <input class="dia" id="dia" type="number" max="31">
+<br><br>
+    <label for="Mês de nascimento">Mês do seu nascimento:</label>
+    <select name="Mês de nascimento" id="mes">
+        <option value="01">Janeiro</option>
+        <option value="02">Fevereiro</option>
+        <option value="03">Março</option>
+        <option value="04">Abril</option>
+        <option value="05">Maio</option>
+        <option value="06">Junho</option>
+        <option value="07">Julho</option>
+        <option value="08">Agosto</option>
+        <option value="09">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+    </select>
+<br><br>
+    <label for="Ano de nascimento">Ano de nascimento</label>
+    <input class="ano" id="ano" type="number">
+<br><br>
+    <button class="botton" onclick="CalcularIdade()">Calcular a idade</button>    
+
+    <script>
+        function CalcularIdade(){
+            var hoje = new Date()
+
+            let result = document.getElementById("resultado")
+
+            let dia = document.getElementById("dia"). value;
+            let mes = document.getElementById("mes"). value;
+            let ano = document.getElementById("ano"). value;
+
+            if (dia <= || dia > 31 || ano <= 0) {
+              alert("Digite uma data de nascimento válida")
+            return   
+            }
+           
+            let nascimento = new Date(ano + "/" + mes + "/" + dia);
+
+            var idade = hoje.getFullYear() - nascimento.getFullYear()
+
+            let dth = new Date(hoje.getFullYear(), hoje. getMonth(), hoje. getDate())
+            let dth2 = new Date(hoje.getFullYear(), nascimento.getMonth(), nascimento.getDate())
+
+            if (dth < dth2){
+                idade--;
+            }
+        }
+    </script>
+</body>
+</html>
