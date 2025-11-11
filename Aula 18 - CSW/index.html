@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 17</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>Calculadora de idade</h1>
+    </div>
+    <form>
+            <label for="Dia do nascimento">Dia do seu nascimento:</label>
+            <input class="dia" id="dia" type="number" max="31">
+
+    <br><br>
+
+            <label for="Mês de nascimento">Mês do seu nascimento:</label>
+            <select name="Mês de nascimento" id="mes">
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+
+    <br><br>
+
+            <label for="Ano de nascimento">Ano de nascimento</label>
+            <input class="ano" id="ano" type="number">
+
+    <br><br>
+
+            <button class="botton" onclick="CalcularIdade()">Calcular a idade</button>    
+            <p><strong>Idade:</strong></p>
+            <div id="resultado"></div>
+            <br>
+            <br>
+            <hr>
+    </form>
+
+    </div>
+
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
